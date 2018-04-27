@@ -1,0 +1,20 @@
+# Write a Python program to count the occurrences of each word
+# in a given sentence.
+import string
+
+my_string = "How many times is this in this? Exactly this many times."
+
+output = []
+
+for char in my_string:
+    if char not in string.punctuation:
+        output.append(char)
+output = ("".join(output)).split()
+
+my_dict = {}
+
+for word in output:
+    my_dict.update({word: output.count(word)})
+
+for key, value in my_dict.items():
+    print("{:7}{:2}".format(key, value))
