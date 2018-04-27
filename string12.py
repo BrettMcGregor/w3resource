@@ -2,7 +2,7 @@
 # in a given sentence.
 import string
 
-my_string = "How many times is this in this? Exactly this many times."
+my_string = "How many times is this in this? Exactly this, how many times."
 
 output = []
 
@@ -16,5 +16,7 @@ my_dict = {}
 for word in output:
     my_dict.update({word: output.count(word)})
 
+print("\n{:10}{}".format("Word", "Count") + "\n" + "-" * 15)
+
 for key, value in my_dict.items():
-    print("{:7}{:2}".format(key, value))
+    print("{:10}{:^5}".format(key, value))
