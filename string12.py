@@ -1,5 +1,6 @@
 # Write a Python program to count the occurrences of each word
 # in a given sentence.
+"""refactor to functions at some point"""
 import string
 
 my_string = "How many times is this in this? Exactly this, how many times."
