@@ -7,7 +7,7 @@ my_string = "How many times is this in this? Exactly this, how many times."
 
 output = []
 
-#remove punctuation from string
+# remove punctuation from string
 for char in my_string:
     if char not in string.punctuation:
         output.append(char)
