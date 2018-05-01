@@ -6,8 +6,7 @@
 
 def insert_string_middle(target, stringa):
     mid1 = int(len(target)/2)
-    mid2 = int((len(target)/2) * -1)
-    print("".join(target[:mid1] + stringa + target[mid2:]))
+    print("".join(target[:mid1] + stringa + target[mid1 * -1:]))
 
 
 insert_string_middle('{{{{}}}}', 'PHP')
