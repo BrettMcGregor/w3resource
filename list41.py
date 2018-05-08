@@ -15,8 +15,7 @@ def create_multiple_lists(name, number, length):
     for i in range(number):
         create_list(name, length, lists_dict, i)
         name = "".join(name)
-    for item in lists_dict.items():
-        print(item)
+    print(lists_dict)
 
 
 create_multiple_lists("new_list", 20, 10)
